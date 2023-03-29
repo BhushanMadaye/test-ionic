@@ -1,0 +1,17 @@
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-button fill="solid" (click)="scanQR(false)">Scan QR without flashlight</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button fill="solid" (click)="scanQR(true)">Scan QR with flashlight</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      Output Result: {{ output }}
+    </ion-col>
+  </ion-row>
+</ion-grid>

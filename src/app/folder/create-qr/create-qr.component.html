@@ -1,0 +1,26 @@
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-item fill="outline">
+        <ion-label position="floating">Enter value</ion-label>
+        <ion-input placeholder="Enter text" [(ngModel)]="inputString"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<div class="card-container">
+  <ion-card>
+    <ion-card-content>
+      <ngx-qrcode class="qr-code"
+        [value]="value">
+      </ngx-qrcode>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+
+<ion-button fill="solid" (click)="generateQR()">Generate QR</ion-button>
+

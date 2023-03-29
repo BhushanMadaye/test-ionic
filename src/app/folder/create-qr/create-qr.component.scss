@@ -1,0 +1,16 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    ion-card {
+        width: 90%;
+        aspect-ratio: 1;
+        .qrcode {
+            width: 100%;
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+}
