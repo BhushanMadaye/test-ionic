@@ -11,6 +11,11 @@ const routes: Routes = [
     component: FolderPage,
     children: [
       {
+        path: '',
+        redirectTo: 'create',
+        pathMatch: 'full'
+      },
+      {
         path: 'create',
         component: CreateQrComponent
       },

@@ -6,7 +6,7 @@ import { ScanQrComponent } from './folder/scan-qr/scan-qr.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
